@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body b {
+  color: #ffbf00;
+}
+/* sessão 1 PG 1.0*/
+
+.content-main {
+  max-width: 1460px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  background-color: #000000;
+  padding: 20px;
+}
+
+.contentTitle {
+  max-width: 1460px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  gap: 875px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+nav li {
+  margin-left: auto;
+}
+
+.navegacao {
+  display: flex;
+  justify-content: space-around;
+}
+
+.botaoNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.botaoNav li {
+  margin: 0 10px;
+  color: #ffffff;
+}
+
+.botaoNav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* Contêiner principal para article e aside */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #000000;
+}
+
+article {
+  flex: 1;
+  margin-right: 20px;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 60px;
+  max-width: 25ch;
+}
+
+.sectionHome1 {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 25px;
+  max-width: 40ch;
+  line-height: 40px;
+  color: #b2b2b2;
+  position: relative;
+}
+
+.botaoSection1 a {
+  display: inline-block;
+  padding: 20px;
+  background-color: #ffbf00;
+  color: #332200;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+aside {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.imgSection1 img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.imgOverFlow {
+  top: 90px; /* Ajuste conforme necessário */
+  right: -15px; /* Ajuste conforme necessário */
+  z-index: 0; /* Certifica-se de que a imagem esteja atrás do conteúdo */
+}
+.sectionHome1::after {
+  content: "";
+  position: absolute;
+  background-image: url("./img/detalhe\ dir.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 65px;
+  bottom: 0;
+  left: 0;
+  bottom: -20px;
+  left: -455px;
+}
+
+/* Contudo 2 da pg home 1 */
+
+.content-article2 {
+  display: flex;
+  max-width: 1460px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 240px;
+  margin-bottom: 150px;
+}
+
+.title2 {
+  font-size: 50px;
+  margin-left: 220px;
+  color: #000000;
+}
+
+.bikesHome2 {
+  display: flex;
+  justify-content: space-between;
+}
+.conteudoArticle2 {
+  position: relative;
+}
+
+.conteudoArticle2 h3 {
+  font-size: 28px;
+  margin-left: 20px;
+  color: #111111;
+}
+.conteudoArticle2 span {
+  color: #595959;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.conteudoArticle2::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(./img/Rectangle\ 35.svg);
+  background-repeat: no-repeat;
+  top: 570px;
+  left: 0;
+}
+
+/* Terceiro Conteudo home 1 */
+
+.content-article3 {
+  max-width: 1460px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.conteudoArticle3 h2 {
+  margin-top: 80px;
+  color: #b2b2b2;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.conteudoArticle3 h3 {
+  font-size: 64px;
+  max-width: 16ch;
+  font-weight: 550;
+  margin: 30px 0;
+  line-height: 70px;
+}
+
+.conteudoArticle3 p {
+  max-width: 40ch;
+  color: #b2b2b2;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.conteudoArticle3 a {
+  color: #ffbf00;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.opcoesBike {
+  display: flex;
+  gap: 40px;
+  margin-top: 150px;
+}
+
+.opcoesBike p {
+  color: #b2b2b2;
+}
+
+.motorEletrico,
+.rastreador {
+  max-width: 30ch;
+  position: relative;
+}
+.motorEletrico::before {
+  content: "";
+  background-image: url(./img/detalheBikeEletrica.svg);
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  bottom: 170px;
+}
+
+.rastreador::before {
+  content: "";
+  background-image: url(./img/icones/rastreador.svg);
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  bottom: 170px;
+}
+
+.imgAside2 {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.imgOverFlow2 {
+  position: relative;
+  margin-top: -80px; /* Ajuste para ultrapassar o topo */
+  margin-bottom: -80px; /* Ajuste para ultrapassar a parte inferior */
+  z-index: 1;
+}
+
+/* Tela Parceiros */
+.content-article4 {
+  display: flex;
+  max-width: 1460px;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 240px;
+  margin-bottom: 150px;
+}
+.parceiros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px;
+  position: relative;
+}
+
+.titleParceiros {
+  display: flex;
+  color: #000000;
+  padding: 20px;
+  margin-left: 110px;
+  font-size: 40px;
+}
+
+.parceiros img {
+  flex: 1 1 calc(20% - 10px);
+  padding: 50px;
+  margin: 5px;
+  max-width: 200px;
+}
+
+.parceiros::before {
+  content: "";
+  background-image: url(./img/dec/line\ Parceiros.svg);
+  position: absolute;
+  width: 1500px;
+  height: 2px;
+  background-repeat: no-repeat;
+  top: 175px;
+  left: 25px;
+}
+.parceiros::after {
+  content: "";
+  background-image: url(./img/dec/line\ vertical\ Parceiros.svg);
+  position: absolute;
+  width: 1px;
+  height: 320px;
+  background-repeat: repeat;
+  top: 10px;
+}
+.parceiros::nth-child(odd)::after {
+  content: "";
+  background-image: url(./img/dec/line\ vertical\ Parceiros.svg);
+  position: absolute;
+  width: 1px;
+  height: 320px;
+  background-repeat: repeat;
+  top: 0;
+  left: 75%;
+}
