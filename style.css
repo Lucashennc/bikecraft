@@ -785,7 +785,7 @@ footer {
   margin-right: 50px;
 }
 
-.conteudoNimbus span {
+.conteudoNimbus a {
   background: linear-gradient(to right, #ffbf00, #f2a50c);
   display: flex;
   flex-direction: row-reverse;
@@ -796,7 +796,7 @@ footer {
   margin-left: auto;
   border-radius: 4px;
 }
-.conteudoMagic span {
+.conteudoMagic a {
   background: linear-gradient(to right, #ffbf00, #f2a50c);
   display: flex;
   flex-direction: row-reverse;
