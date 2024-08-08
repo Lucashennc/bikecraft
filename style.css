@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
 body {
   font-family: "Poppins", Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url("img/background-large.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 body b {
   color: #ffbf00;
@@ -18,11 +24,6 @@ body b {
   position: relative;
 }
 
-header {
-  background-color: #000000;
-  padding: 20px;
-}
-
 .contentTitle {
   max-width: 1460px;
   display: flex;
@@ -36,6 +37,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #000000;
+  padding: 20px;
 }
 
 .title {
@@ -50,6 +53,7 @@ nav li {
 
 .navegacao {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -171,6 +175,7 @@ aside {
 
 .bikesHome2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .conteudoArticle2 {
@@ -240,6 +245,7 @@ aside {
 
 .opcoesBike {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   margin-top: 150px;
 }
@@ -338,13 +344,488 @@ aside {
   background-repeat: repeat;
   top: 10px;
 }
-.parceiros::nth-child(odd)::after {
+
+/* PARTE 5 HOME */
+/* Container Principal */
+.content-container-ana {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #ffbf00;
+}
+
+/* Conteúdo Central */
+.content-ana {
+  max-width: 1460px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+/* Configuração da Seção Principal */
+.ana {
+  display: flex;
+  position: relative;
+  background-color: #ffbf00;
+  gap: 100px;
+}
+
+/* Imagem que ocupa metade do fundo */
+.half-background {
+  width: 50%;
+  object-fit: cover;
+}
+
+/* Estilo do Parágrafo */
+.paragrafoAna {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #332200;
+  position: relative;
+}
+
+/* Estilo dos Parágrafos dentro da Classe paragrafoAna */
+.paragrafoAna p {
+  align-items: center;
+  color: #664400;
+  margin-bottom: 80px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Estilo específico para o Parágrafo com a Classe textAna */
+.textAna {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Merriweather", serif;
+  font-size: 36px;
+  margin-top: 296px;
+  max-width: 25ch;
+  font-weight: 700;
+}
+
+/* Decorações antes e depois da Seção ana */
+.ana::before,
+.ana::after,
+.paragrafoAna::before,
+.paragrafoAna::after {
   content: "";
-  background-image: url(./img/dec/line\ vertical\ Parceiros.svg);
   position: absolute;
-  width: 1px;
-  height: 320px;
-  background-repeat: repeat;
-  top: 0;
-  left: 75%;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+
+/* Decoração antes da Seção ana */
+.ana::before {
+  background-image: url(./img/dec/baixo.svg);
+  top: 460px;
+  left: 1270px;
+}
+
+/* Decoração depois da Seção ana */
+.ana::after {
+  background-image: url(./img/dec/cima.svg);
+  bottom: 290px;
+  right: 465px;
+}
+
+/* Decoração antes da Seção paragrafoAna */
+.paragrafoAna::before {
+  background-image: url(./img/dec/top-left-p.svg);
+  width: 52px;
+  height: 52px;
+  top: -40px;
+  left: -100px;
+}
+
+/* Decoração depois da Seção paragrafoAna */
+.paragrafoAna::after {
+  background-image: url(./img/dec/top-right2.svg);
+  width: 52px;
+  height: 52px;
+  bottom: -25px;
+  right: -150px;
+}
+
+/* SEGUROS HOME PG */
+
+.content-article5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #111111;
+}
+
+.content-seguros {
+  max-width: 1460px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+}
+.seguro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.seguroPrata {
+  display: flex;
+  flex-direction: row;
+  background-color: #000000;
+  gap: 100px;
+  border-radius: 4px;
+}
+.seguroOuro {
+  display: flex;
+  flex-direction: row;
+  background-color: #000000;
+  gap: 100px;
+  border-radius: 4px;
+}
+.listSeguroPrata ul {
+  list-style-type: none;
+}
+.listSeguroPrata li {
+  margin-top: 20px;
+  margin-left: 32px;
+}
+.content-seguros h2 {
+  font-size: 54px;
+}
+.listSeguroPrata {
+  display: flex;
+  flex-direction: column;
+}
+.listSeguroPrata span {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+  background-color: #2e2e2e;
+  margin: 32px;
+  border-radius: 4px;
+}
+.valorSeguroPrata {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  margin: 20px;
+}
+.valorSeguroPrata p {
+  margin-top: -8px;
+  margin-left: 70px;
+  font-size: 12px;
+}
+.valorSeguroPrata span {
+  font-size: 38px;
+  background-color: #000000 !important;
+}
+.valorSeguroOuro {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  margin: 20px;
+}
+.valorSeguroOuro p {
+  margin-top: -8px;
+  margin-left: 70px;
+  font-size: 12px;
+}
+.valorSeguroOuro span {
+  font-size: 38px;
+  background-color: #000000 !important;
+}
+.listSeguroOuro ul {
+  list-style-type: none;
+}
+.listSeguroOuro li {
+  margin-top: 20px;
+  margin-left: 32px;
+}
+
+.listSeguroOuro {
+  display: flex;
+  flex-direction: column;
+}
+.listSeguroOuro span {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+  background-color: #ffbb00;
+  margin: 32px;
+  border-radius: 4px;
+  color: #332200;
+  font-weight: 600;
+}
+.seguroPrata h3 {
+  color: #9c9c9c;
+  margin: 32px 64px;
+  font-size: 36px;
+  font-weight: 500;
+}
+.seguroOuro h3 {
+  color: #ffbb00;
+  margin: 32px 64px;
+  font-size: 36px;
+  font-weight: 500;
+}
+.valorSeguroOuro span {
+  font-size: 38px;
+  background-color: #000000 !important;
+}
+.itensSeguroPrata {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.itensSeguroPrata li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.itensSeguroOuro {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.itensSeguroOuro li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 140px;
+}
+
+.content-containerFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+}
+.content-Footer {
+  max-width: 1460px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+.imgFooter {
+  margin-top: 60px;
+  margin-right: 160px;
+}
+.contato {
+  margin-left: -65px;
+  display: flex;
+  flex-direction: column;
+  color: #b2b2b2;
+}
+.contato h2 {
+  margin-top: 60px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 200;
+  margin-left: 20px;
+}
+.redes {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.fone-email {
+  max-width: 20ch;
+  padding: 0 20px;
+}
+.endereco {
+  padding: 20px;
+  border-top: 2px solid #111111;
+  border-bottom: 2px solid #111111;
+}
+.informacao {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 40px;
+  color: #b2b2b2;
+}
+
+.informacao h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 200;
+}
+.informacao li {
+  list-style-type: none;
+}
+.rodape {
+  color: #b2b2b2;
+  margin-top: 340px;
+}
+
+/* PAGINA BICICLETAS */
+
+.content-Bikepg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #111111;
+}
+.content-entrada {
+  max-width: 1460px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 220px;
+}
+.content-Bikes {
+  max-width: 1460px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.entrada {
+  margin-left: 220px;
+  line-height: 0px;
+  padding: 20px;
+}
+.entrada p {
+  font-size: 64px;
+  font-weight: 600;
+}
+.entrada h2 {
+  color: #b2b2b2;
+  font-size: 30px;
+  font-weight: 500;
+}
+.NossasBikes {
+  display: flex;
+  gap: 40px;
+}
+.NossasBikesMagic {
+  display: flex;
+  background-color: #111111;
+  border-radius: 4px;
+  position: relative;
+}
+.imgBikeNimbus {
+  position: relative;
+  left: -250px;
+  display: flex;
+  align-self: center;
+}
+.imgBikeMagic {
+  position: relative;
+  left: -250px;
+  display: flex;
+  align-self: center;
+}
+.imgBikeCosmic {
+  position: relative;
+  left: -250px;
+  display: flex;
+  align-self: center;
+}
+.conteudoNimbus {
+  display: flex;
+  color: #000000;
+  flex-direction: column;
+}
+.conteudoMagic {
+  display: flex;
+  color: #000000;
+  flex-direction: column;
+}
+.conteudoNimbus h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-left: 40px;
+}
+.conteudoMagic h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-left: 40px;
+  color: white;
+}
+.conteudoNimbus p {
+  max-width: 45ch;
+  color: #595959;
+  font-size: 18px;
+  margin-left: 40px;
+}
+.conteudoMagic p {
+  max-width: 45ch;
+  color: #b2b2b2;
+  font-size: 18px;
+  margin-left: 40px;
+}
+.listNimbus ul {
+  list-style-type: none;
+  color: #595959;
+  margin-right: 50px;
+}
+
+.conteudoNimbus span {
+  background: linear-gradient(to right, #ffbf00, #f2a50c);
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  border-radius: 4px;
+}
+.conteudoMagic span {
+  background: linear-gradient(to right, #ffbf00, #f2a50c);
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  border-radius: 4px;
+}
+
+.bikeEletrica {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.carbono {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.velocidade {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.rastreadorBike {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
 }
