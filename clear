@@ -1,0 +1,36 @@
+[33mcommit 5c4dfa34dcec9cfe587df47190603035fc89d51f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Lucas Henn <lucashenn235@gmail.com>
+Date:   Wed Aug 21 10:51:29 2024 -0300
+
+    adicionando nova pagina ao projeto
+
+[33mcommit 8367bbbe53c6b60f4c450bf6540af99b07ef76fd[m
+Author: Lucas Henn <lucashenn235@gmail.com>
+Date:   Thu Aug 8 17:51:27 2024 -0300
+
+    Adicionando nova pg ao site
+
+[33mcommit 5aaea47116180afb68b3a3663598f7386b99d4f3[m
+Merge: 90b2db7 9ead55b
+Author: Lucas Henn <lucashenn235@gmail.com>
+Date:   Thu Aug 8 11:14:08 2024 -0300
+
+    Resolve conflitos de merge no arquivo home.html
+
+[33mcommit 90b2db79ed7749847b17f8347948f2e8c127742f[m
+Author: Lucas Henn <lucashenn235@gmail.com>
+Date:   Thu Aug 8 11:06:46 2024 -0300
+
+    nova pg do menu home bicicletas
+
+[33mcommit 9ead55b6d601cade503746f1c7212a3d53a91067[m
+Author: Lucas Henn <lucashenn235@gmail.com>
+Date:   Tue Aug 6 11:26:05 2024 -0300
+
+    Update home.html
+
+[33mcommit a0ff7bb6844f341dbdee3b3ceecaa777292fd7d2[m
+Author: Lucas Henn <lucashenn235@gmail.com>
+Date:   Thu Aug 1 14:23:01 2024 -0300
+
+    commit inicial
