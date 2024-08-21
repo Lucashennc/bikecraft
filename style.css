@@ -788,6 +788,7 @@ footer {
 
 .conteudoNimbus a {
   background: linear-gradient(to right, #ffbf00, #f2a50c);
+  color: #332200;
   display: flex;
   flex-direction: row-reverse;
   font-size: 18px;
@@ -796,10 +797,12 @@ footer {
   margin-bottom: 60px;
   margin-left: auto;
   border-radius: 4px;
+  text-decoration: none;
 }
 .conteudoMagic a {
   background: linear-gradient(to right, #ffbf00, #f2a50c);
   display: flex;
+  color: #332200;
   flex-direction: row-reverse;
   font-size: 18px;
   font-weight: 600;
@@ -807,6 +810,7 @@ footer {
   margin-bottom: 60px;
   margin-left: auto;
   border-radius: 4px;
+  text-decoration: none;
 }
 
 .bikeEletrica {
