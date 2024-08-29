@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+  .content-main,
+  .content-article2,
+  .content-article3,
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .botaoNav a {
+    font-size: 18px;
+  }
+
+  .imgSection1 img,
+  .imgAside2,
+  .imgFooter {
+    max-width: 100%;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

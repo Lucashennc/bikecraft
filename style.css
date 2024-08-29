@@ -506,6 +506,13 @@ aside {
   margin: 0 auto;
   position: relative;
 }
+
+.fraseSeguro p {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  color: #b2b2b2;
+  margin-bottom: -45px;
+}
 .seguro {
   display: flex;
   flex-wrap: wrap;
@@ -536,6 +543,8 @@ aside {
 }
 .content-seguros h2 {
   font-size: 54px;
+  font-weight: 550;
+  margin-bottom: 60px;
 }
 .listSeguroPrata {
   display: flex;
@@ -1205,4 +1214,106 @@ footer {
 .seguro-img {
   display: block;
   margin: -80px auto; /* Ajuste conforme necessário para ultrapassar o topo e o bottom */
+}
+
+/* Pg Seguro */
+
+.content-article6 {
+  padding: 20px;
+  background-color: #000000;
+}
+
+.contentSeguro {
+  max-width: 1460px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.contentSeguro h2 {
+  font-size: 64px;
+  margin-left: 40px;
+  font-weight: 550;
+  margin-bottom: 100px;
+}
+
+.vantagensSeguros ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 20px;
+  gap: 50px;
+  list-style-type: none;
+}
+
+.vantagensSeguros li {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.vantagensSeguros p {
+  max-width: 38ch;
+  font-size: 18px;
+  color: #9c9c9c;
+}
+
+/* Perguntas Frequentes */
+
+.mainPerguntas {
+  max-width: 1460px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px;
+  margin-bottom: -20px;
+}
+
+.mainPerguntas h1 {
+  color: #000000;
+  font-size: 64px;
+}
+
+.mainPerguntas p {
+  color: #404040;
+  font-size: 18px;
+  max-width: 80ch;
+  margin-left: 20px;
+}
+
+.mainPerguntas li {
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  position: relative;
+}
+
+.pergunta {
+  color: #111111;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texto-pergunta {
+  flex: 1; /* Ocupa todo o espaço disponível entre a imagem e a seta */
+}
+
+.detalhe {
+  margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.seta {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #595959;
+  border-bottom: 2px solid #595959;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+/* Rotaciona a seta quando o <details> está aberto */
+details[open] .seta {
+  transform: rotate(-135deg);
 }
