@@ -1,17 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1em;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  text-decoration: none;
+  outline: 0;
+  list-style: none;
+}
 
 body {
   font-family: "Poppins", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url("img/background-large.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 body b {
   color: #ffbf00;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  height: auto;
+  padding: 60px 20px;
+}
+
+.main {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+}
+
+.flex_r,
+.flex_c {
+  display: flex;
+}
+
+.flex_r {
+  flex-wrap: wrap;
+}
+
+.middle {
+  align-items: center;
+}
+
+.flex_c {
+  flex-direction: column;
 }
 
 body a {
@@ -163,6 +211,7 @@ aside {
   max-width: 100%;
   height: auto;
   position: relative;
+  position: relative;
   border: 2px solid transparent;
 }
 
@@ -171,6 +220,7 @@ aside {
   right: -15px; /* Ajuste conforme necessário */
   z-index: 0; /* Certifica-se de que a imagem esteja atrás do conteúdo */
 }
+
 .sectionHome1::after {
   content: "";
   position: absolute;
