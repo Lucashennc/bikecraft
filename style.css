@@ -13,6 +13,10 @@ body {
 body b {
   color: #ffbf00;
 }
+
+body a {
+  text-decoration: none;
+}
 /* sessão 1 PG 1.0*/
 
 .content-main {
@@ -68,6 +72,7 @@ nav li {
 .botaoNav li {
   margin: 0 10px;
   color: #ffffff;
+  position: relative;
 }
 
 .botaoNav a {
@@ -75,8 +80,24 @@ nav li {
   color: #ffffff;
   font-weight: bold;
   font-size: 25px;
+  padding: 5px 0;
+  display: block;
 }
 
+.botaoNav li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; /* Espessura da borda */
+  background-color: #ffffff; /* Cor da borda */
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.botaoNav li:hover::after {
+  width: 100%;
+}
 /* Contêiner principal para article e aside */
 .content-container {
   display: flex;
@@ -120,6 +141,15 @@ article {
   border-radius: 5px;
   margin-top: 30px;
   font-weight: 600;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.botaoSection1 a:hover {
+  background-color: #8f6104;
+  color: #b2b2b2;
+  border-color: #8f6104;
 }
 
 aside {
@@ -133,6 +163,7 @@ aside {
   max-width: 100%;
   height: auto;
   position: relative;
+  border: 2px solid transparent;
 }
 
 .imgOverFlow {
@@ -166,7 +197,14 @@ aside {
   margin-top: 240px;
   margin-bottom: 150px;
 }
-
+.conteudoArticle2 img {
+  border: 3px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.content-article2 img:hover {
+  border-color: #f2a50c;
+}
 .title2 {
   font-size: 50px;
   margin-left: 220px;
@@ -266,7 +304,7 @@ aside {
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
-  bottom: 170px;
+  bottom: 135px;
 }
 
 .rastreador::before {
@@ -276,7 +314,7 @@ aside {
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
-  bottom: 170px;
+  bottom: 135px;
 }
 
 .imgAside2 {
@@ -422,15 +460,15 @@ aside {
 /* Decoração antes da Seção ana */
 .ana::before {
   background-image: url(./img/dec/baixo.svg);
-  top: 460px;
-  left: 1270px;
+  top: 365px;
+  left: 1020px;
 }
 
 /* Decoração depois da Seção ana */
 .ana::after {
   background-image: url(./img/dec/cima.svg);
-  bottom: 290px;
-  right: 465px;
+  bottom: 195px;
+  right: 220px;
 }
 
 /* Decoração antes da Seção paragrafoAna */
@@ -510,6 +548,13 @@ aside {
   background-color: #2e2e2e;
   margin: 32px;
   border-radius: 4px;
+  border: 2px solid transparent;
+  transition: border-color 0.4s ease-in-out;
+}
+
+.listSeguroPrata span:hover {
+  background-color: #141414;
+  border-color: #141414;
 }
 .valorSeguroPrata {
   display: flex;
@@ -562,7 +607,15 @@ aside {
   border-radius: 4px;
   color: #332200;
   font-weight: 600;
+  border: 2px solid transparent;
+  transition: border-color 0.4s ease-in-out;
 }
+.listSeguroOuro span:hover {
+  background-color: #b67f10;
+  border-color: #b67f10;
+  color: white;
+}
+
 .seguroPrata h3 {
   color: #9c9c9c;
   margin: 32px 64px;
@@ -590,6 +643,7 @@ aside {
   margin-bottom: 10px;
   gap: 10px;
 }
+
 .itensSeguroOuro {
   list-style: none;
   padding: 0;
@@ -798,7 +852,14 @@ footer {
   margin-left: auto;
   border-radius: 4px;
   text-decoration: none;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
 }
+
+.conteudoNimbus a:hover {
+  border-color: #664400;
+}
+
 .conteudoMagic a {
   background: linear-gradient(to right, #ffbf00, #f2a50c);
   display: flex;
@@ -811,6 +872,12 @@ footer {
   margin-left: auto;
   border-radius: 4px;
   text-decoration: none;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.conteudoMagic a:hover {
+  border-color: #b2b2b2;
 }
 
 .bikeEletrica {
@@ -871,6 +938,18 @@ footer {
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+  border: 3px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.img-row img {
+  border: 1.5px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.img-row img:hover {
+  border-color: #f2a50c;
 }
 
 .precoTittle p {
@@ -911,7 +990,16 @@ footer {
   text-decoration: none;
   color: #332200;
   font-weight: 700;
+  border: 3px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+  border-radius: 10px;
 }
+.entrega-estoque a:hover {
+  background-color: #8f6104;
+  color: #ffffff;
+  border-color: #f2a50c;
+}
+
 .entrega-estoque span {
   font-size: 12px;
   display: flex;
@@ -1041,7 +1129,15 @@ footer {
 }
 .conteudoMaisSobre img {
   max-width: 560px;
+  border: 3px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+  border-radius: 10px;
 }
+
+.conteudoMaisSobre img:hover {
+  border-color: #f2a50c;
+}
+
 .conteudoMaisSobre h3 {
   padding: 20px;
   margin: 0px;
